@@ -1,10 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Joon's Website</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hyunjoon Oh</h1>
-  <p>Statistics and Data Science student at UCLA.</p>
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">Joon</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <p class="intro">Hello, I'm</p>
+      <h1>Hyunjoon Oh</h1>
+      <p class="subtitle">
+        Statistics and Data Science student at UCLA interested in data analysis,
+        machine learning, and research.
+      </p>
+
+      <div class="buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <button id="theme-toggle" class="btn btn-outline">Change Theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section card">
+      <h2>About Me</h2>
+      <p>
+        I'm a Statistics and Data Science student at UCLA. I enjoy building projects
+        that combine data, problem-solving, and creativity. I'm especially interested
+        in using data to answer meaningful real-world questions.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="card project-card">
+          <h3>Crime Premise Prediction</h3>
+          <p>
+            Built a logistic regression model to predict whether crimes occur in
+            residential or commercial settings using victim demographics and LAPD data.
+          </p>
+        </div>
+
+        <div class="card project-card">
+          <h3>Reddit Engagement Analysis</h3>
+          <p>
+            Explored how post framing and emotional intensity relate to engagement
+            using collected Reddit post data.
+          </p>
+        </div>
+
+        <div class="card project-card">
+          <h3>More Coming Soon</h3>
+          <p>
+            I’m currently building more data science and analytics projects to add here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2>Contact</h2>
+      <p>Email: your_email@example.com</p>
+      <p>GitHub: github.com/Joonahmohae</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hyunjoon Oh</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
